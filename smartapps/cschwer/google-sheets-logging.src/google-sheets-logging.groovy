@@ -240,8 +240,8 @@ def handleLockEvent(evt) {
 private def baseUrl() {
     String url = "https://script.google.com/"
     if (settings.appsDomain != null) url += "a/"
-    url += "macros/"
     if (settings.appsDomain != null) url += "${appsDomain}/"
+    url += "macros/"
     url += "s/${urlKey}/exec?"
 
     log.debug "url ["+url+"]"
